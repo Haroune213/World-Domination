@@ -27,7 +27,7 @@ html, body{
 
 #main-menu{
     width: 100vw;
-    height: 5vh;
+    height: 20vh;
     position: absolute;
     z-index: 2;
     margin-top: 70vh;
@@ -160,6 +160,7 @@ svg path:hover{
 #rules{
 font-size: 9px;
 }
+
 
 
 
