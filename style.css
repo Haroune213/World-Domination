@@ -1,0 +1,161 @@
+
+*, *::before, *::after
+{box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'troika';
+    src: url('fonts/troika.otf') format('opentype');
+}
+
+*{
+
+    outline: 0;
+}
+
+html, body{
+    font-family: 'troika', sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1vw;
+    overflow: hidden;
+    background-color: #023e8a;
+
+}
+
+#main-menu{
+    width: 100vw;
+    height: 5vh;
+    position: absolute;
+    z-index: 2;
+    margin-top: 70vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2vw;
+    transition: 0.3s ease-out;
+}
+#player-range{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+#menu-container{
+    width: 50vw;
+    display: flex;
+    justify-content:  space-around;
+    flex-direction: row;
+    row-gap: 5vw;
+}
+#play-button{
+    width: 20vw;
+    outline:none;
+    backdrop-filter: blur(10px);    
+    box-shadow: white 0 0 2vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1vw;
+    border: none;
+    font-family: 'troika';
+    color: white;
+    cursor: pointer;
+}
+#play-button:hover{
+    box-shadow: white 0 0 3vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+
+#gameDashboard{
+    position: absolute;
+    display: none;
+    padding: 3vw;
+    justify-content: space-between;
+    max-height: 62vh;
+    width: 100vw;
+}
+
+#showReserve{
+    height: 5vh;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+    backdrop-filter: blur(10px);    
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1vw;
+    padding:0 1vw;
+    color: white;
+}
+
+#scoretab{
+    min-width: 20vw;
+    max-width: 40vw;
+    max-height: 62vh;
+    background-color: blue;
+    z-index: 2;
+    justify-content:center;
+    border-radius: 1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);    
+    box-shadow: rgba(255, 255, 255, 0.233) 0 0 1vw;
+    padding: 1vw;
+    transition: 1s ease-in;
+}
+#scoretab table{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 100%;
+    font-size: 1.5vw;
+    letter-spacing: 0.2vw;
+}
+
+#Player-range{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    cursor: pointer;
+    z-index: 2;
+    margin-top: 90vh;
+    margin-left: 25vw;
+}
+#playerRange{
+    width: 100%;
+}
+
+
+#world-map{
+    z-index: 1;
+    position: absolute;
+    cursor: grabbing;
+ 
+}
+
+svg path{
+    fill: grey;
+    stroke: #370617;
+    stroke-width: .5;
+}
+
+
+svg path:hover{
+    fill: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+
+}
+
+#worldmap{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transform: scale(1);
+    z-index: 1;
+}
+
+
+
