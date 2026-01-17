@@ -180,6 +180,7 @@ var playerLand=[];
 function startGame(){
     if(startPosition==null){
         document.getElementById("initial-header").innerText="Please select a country before starting the game"
+        document.getElementById("rules").innerText="Rules: The goal of the game is to conquer the whole world with your country. Each seconds, you gain a number of soliders depending on the number of regions you hold. You can conquer another country if you have more soliders than them"
     }
     else{
     document.getElementById('main-menu').style.display="none",
@@ -379,3 +380,4 @@ function playerActions(){
 
 
 }
+
